@@ -2,7 +2,10 @@ import React from 'react';
 import './Counter.css';
 
 export default class Counter extends React.Component {
-    state = { counter: 0 };
+    constructor(props) {
+        super(props);
+        this.state = { counter: 0 };
+    }
 
     componentDidMount() {
         setInterval(this.incrementCounter, 1000);
