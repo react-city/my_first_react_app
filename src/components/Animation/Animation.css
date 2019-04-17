@@ -1,18 +1,59 @@
-.animation{
-    animation: changeColor 3s linear infinite alternate;
+.animation {
     height: 100px;
+    position: relative;
+    width: 300px;
+    display: inline-block;
+}
+
+.animation__circle {
+    position: absolute;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: move 1s linear infinite alternate, changeColor 1s linear infinite alternate;
+}
+
+.animation__circle::before,
+.animation__circle::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+
+.animation__circle::before {
+    top: 20px;
+    left: 20px;
+}
+
+.animation__circle::after {
+    top: 20px;
+    right: 20px;
 }
 
 @keyframes changeColor {
     from {
-        background-color: red;
-    }
-
-    50% {
         background-color: blue;
     }   
+
+    50% {
+        background-color: red;
+    }
   
     to {
-        background-color: yellow;
+        background-color: blue;
     }
-  }
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+  
+    to {
+        left: calc(100% - 80px);
+    }
+}
