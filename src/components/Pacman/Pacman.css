@@ -90,7 +90,7 @@
 }
 
 @media (max-width: 767.98px) {
-    .animation__circle {
+    .pacman__figure {
         animation-duration: 2s, 4s;
     }
 }
