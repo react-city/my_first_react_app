@@ -1,0 +1,18 @@
+.animation{
+    animation: changeColor 3s linear infinite alternate;
+    height: 100px;
+}
+
+@keyframes changeColor {
+    from {
+        background-color: red;
+    }
+
+    50% {
+        background-color: blue;
+    }   
+  
+    to {
+        background-color: yellow;
+    }
+  }
