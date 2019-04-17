@@ -51,18 +51,6 @@
     }
 }
 
-@keyframes eat {
-    from {
-        border-width: 30px;
-        border-right-width: 40px;
-    }
-  
-    to {
-        border-width: 0;
-        border-right-width: 40px;
-    }
-}
-
 @keyframes mirror {
     from {
         transform: scale(1, 1);
@@ -77,6 +65,18 @@
     }
 }
 
+@keyframes eat {
+    from {
+        border-width: 30px;
+        border-right-width: 40px;
+    }
+  
+    to {
+        border-width: 0;
+        border-right-width: 40px;
+    }
+}
+
 @keyframes eyemove {
     from {
         top: 5px;
@@ -86,5 +86,11 @@
     to {
         top: 15px;
         right: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .animation__circle {
+        animation-duration: 2s, 4s;
     }
 }
