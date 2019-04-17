@@ -14,7 +14,7 @@ export default class Counter extends React.Component {
 
     render() {
         return (
-            <div className="counter">{this.state.counter}</div>
+            <div className="counter">{this.state.counter} sec.</div>
         );
     }
 }

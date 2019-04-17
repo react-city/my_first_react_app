@@ -6,7 +6,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <div className="header">
-                Hello world!
+                You have been staing on this website for
                 <Counter />
             </div>
         );
