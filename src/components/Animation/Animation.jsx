@@ -6,7 +6,6 @@ export default class Animation extends React.Component {
         return (
             <div className="animation">
                 <div className="animation__circle" />
-                <div className="block" />
             </div>
         );
     }
