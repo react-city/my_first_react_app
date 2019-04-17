@@ -1,51 +1,44 @@
 .animation {
     height: 100px;
     position: relative;
-    width: 300px;
-    display: inline-block;
 }
 
 .animation__circle {
     position: absolute;
     top: 10px;
+    left: 0;
+    background-color: black;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    animation: move 1s linear infinite alternate, changeColor 1s linear infinite alternate;
-}
-
-.animation__circle::before,
-.animation__circle::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: white;
+    animation: move 5s linear infinite alternate, mirror 10s step-end infinite;
 }
 
 .animation__circle::before {
-    top: 20px;
-    left: 20px;
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation: eyemove .25s linear infinite alternate;
 }
 
 .animation__circle::after {
-    top: 20px;
-    right: 20px;
-}
-
-@keyframes changeColor {
-    from {
-        background-color: blue;
-    }   
-
-    50% {
-        background-color: red;
-    }
-  
-    to {
-        background-color: blue;
-    }
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 30px;
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: 40px;
+    transform: translateY(-50%);
+    animation: eat .25s linear infinite alternate;
 }
 
 @keyframes move {
@@ -55,5 +48,43 @@
   
     to {
         left: calc(100% - 80px);
+    }
+}
+
+@keyframes eat {
+    from {
+        border-width: 30px;
+        border-right-width: 40px;
+    }
+  
+    to {
+        border-width: 0;
+        border-right-width: 40px;
+    }
+}
+
+@keyframes mirror {
+    from {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(-1, 1);
+    }
+
+    to {
+        transform: scale(-1, 1);
+    }
+}
+
+@keyframes eyemove {
+    from {
+        top: 5px;
+        right: 30px;
+    }
+  
+    to {
+        top: 15px;
+        right: 20px;
     }
 }
