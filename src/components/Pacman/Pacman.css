@@ -1,9 +1,9 @@
-.animation {
+.pacman {
     height: 100px;
     position: relative;
 }
 
-.animation__circle {
+.pacman__figure {
     position: absolute;
     top: 10px;
     left: 0;
@@ -14,7 +14,7 @@
     animation: move 5s linear infinite alternate, mirror 10s step-end infinite;
 }
 
-.animation__circle::before {
+.pacman__figure::before {
     content: '';
     position: absolute;
     top: 5px;
@@ -26,7 +26,7 @@
     animation: eyemove .25s linear infinite alternate;
 }
 
-.animation__circle::after {
+.pacman__figure::after {
     content: '';
     position: absolute;
     right: 0;

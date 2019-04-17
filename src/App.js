@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Header from './components/Header/Header';
-import Animation from './components/Animation/Animation';
+import Pacman from './components/Pacman/Pacman';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Animation />
+        <Pacman />
       </div>
     );
   }
