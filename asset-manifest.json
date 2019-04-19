@@ -1,5 +1,5 @@
 {
-  "main.css": "/my_first_react_app/static/css/main.8294c335.chunk.css",
+  "main.css": "/my_first_react_app/static/css/main.d31d6efd.chunk.css",
   "main.js": "/my_first_react_app/static/js/main.95692ec9.chunk.js",
   "main.js.map": "/my_first_react_app/static/js/main.95692ec9.chunk.js.map",
   "runtime~main.js": "/my_first_react_app/static/js/runtime~main.e04968da.js",
@@ -7,7 +7,7 @@
   "static/js/2.d6a534e5.chunk.js": "/my_first_react_app/static/js/2.d6a534e5.chunk.js",
   "static/js/2.d6a534e5.chunk.js.map": "/my_first_react_app/static/js/2.d6a534e5.chunk.js.map",
   "index.html": "/my_first_react_app/index.html",
-  "precache-manifest.decfe48881e7eeb33c1d3af461313b7a.js": "/my_first_react_app/precache-manifest.decfe48881e7eeb33c1d3af461313b7a.js",
+  "precache-manifest.9c6e93046f448b3a67aabdf0dd7d60aa.js": "/my_first_react_app/precache-manifest.9c6e93046f448b3a67aabdf0dd7d60aa.js",
   "service-worker.js": "/my_first_react_app/service-worker.js",
-  "static/css/main.8294c335.chunk.css.map": "/my_first_react_app/static/css/main.8294c335.chunk.css.map"
+  "static/css/main.d31d6efd.chunk.css.map": "/my_first_react_app/static/css/main.d31d6efd.chunk.css.map"
 }
