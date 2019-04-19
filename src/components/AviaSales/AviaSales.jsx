@@ -9,7 +9,7 @@ export default class AviaSales extends React.Component {
 
     getFlights() {
         const token = '76d0c0460e16b3591eb5b390af2c7343';
-        const url = `http://api.travelpayouts.com/v2/prices/latest?currency=rub&period_type=year&page=1&limit=30&show_to_affiliates=true&sorting=price&token=${token}`;
+        const url = `https://api.travelpayouts.com/v2/prices/latest?currency=rub&period_type=year&page=1&limit=30&show_to_affiliates=true&sorting=price&token=${token}`;
 
         return fetch(url);
     }
@@ -20,7 +20,7 @@ export default class AviaSales extends React.Component {
         if (!pricesIsOpen && flights.length === 0) {
             this.getFlights()
                 .then(res => res.json())
-                .then(res => this.setState({flights: res.data, pricesIsOpen: true}))
+                .then(res => this.setState({flights: res.data || [], pricesIsOpen: true}))
                 .catch(error => this.setState({error}))
         } else {
             this.setState({pricesIsOpen: !pricesIsOpen});
