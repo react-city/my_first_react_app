@@ -49,8 +49,8 @@ export default class AviaSales extends React.Component {
                     самые дешевые авиабилеты
                 </button>
                 <ul className={classes}>
-                    {flights.map(flight => (
-                        <li className="avia-sales__item">
+                    {flights.map((flight, i) => (
+                        <li key={i} className="avia-sales__item">
                             <span className="avia-sales__depart-date">{flight.depart_date}</span>
                             <span> | </span>
                             <span className="avia-sales__origin">{flight.origin}</span>
