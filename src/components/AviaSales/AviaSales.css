@@ -1,0 +1,62 @@
+.avia-sales__prices {
+    list-style: none;
+    margin: 1em auto;
+    padding: 0 1em;
+    text-align: left;
+    display: none;
+}
+
+.avia-sales__prices--open {
+    display: block;
+}
+
+.avia-sales__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avia-sales__open {
+    font-size: .9em;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: darkblue;
+}
+
+.avia-sales__error {
+    color: red;
+    padding: 0 1em;
+}
+
+@media (min-width: 576px) { 
+    .avia-sales__prices {
+        width: 	540px;
+    }
+
+    .avia-sales__item {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5em;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .avia-sales__prices {
+        width: 720px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .avia-sales__prices {
+        width: 960px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .avia-sales__prices {
+        width: 1140px;
+    }
+}
