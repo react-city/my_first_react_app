@@ -23,7 +23,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: white;
+    background-color: #745365;
     animation: eyemove .25s linear infinite alternate;
 }
 
