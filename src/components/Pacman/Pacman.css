@@ -1,13 +1,14 @@
 .pacman {
     height: 100px;
     position: relative;
+    background: #745365
 }
 
 .pacman__figure {
     position: absolute;
     top: 10px;
     left: 0;
-    background-color: black;
+    background-color: yellow;
     width: 80px;
     height: 80px;
     border-radius: 50%;
