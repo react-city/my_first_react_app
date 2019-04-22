@@ -23,7 +23,7 @@
     width: 15px;
     height: 15px;
     border-radius: 50%;
-    background-color: #745365;
+    background-color: #000;
     animation: eyemove .25s linear infinite alternate;
 }
 
@@ -36,7 +36,7 @@
     border-color: transparent;
     border-width: 30px;
     border-right-style: solid;
-    border-right-color: white;
+    border-right-color: #000;
     border-right-width: 40px;
     transform: translateY(-50%);
     animation: eat .25s linear infinite alternate;
