@@ -36,7 +36,7 @@
     border-color: transparent;
     border-width: 30px;
     border-right-style: solid;
-    border-right-color: #000;
+    border-right-color: #745365;
     border-right-width: 40px;
     transform: translateY(-50%);
     animation: eat .25s linear infinite alternate;
